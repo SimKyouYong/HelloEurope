@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPageComentVC">
+            <connections>
+                <outlet property="comentTableView" destination="w2F-aL-NJY" id="8ZL-Sy-HvZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="PxF-Cg-vQP"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="w2F-aL-NJY">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JTS-J7-Iur"/>
+                        <outlet property="delegate" destination="-1" id="qJE-5t-JiG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w2F-aL-NJY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="20r-Va-K1C"/>
+                <constraint firstAttribute="trailing" secondItem="PxF-Cg-vQP" secondAttribute="trailing" id="30i-8Q-Tqq"/>
+                <constraint firstItem="PxF-Cg-vQP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BqD-KW-Art"/>
+                <constraint firstItem="PxF-Cg-vQP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="D5N-YU-J4l"/>
+                <constraint firstAttribute="bottom" secondItem="PxF-Cg-vQP" secondAttribute="bottom" id="HNP-bc-nlZ"/>
+                <constraint firstAttribute="bottom" secondItem="w2F-aL-NJY" secondAttribute="bottom" constant="6" id="MKg-Je-QYQ"/>
+                <constraint firstItem="w2F-aL-NJY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="6" id="Mg2-s2-1Rg"/>
+                <constraint firstAttribute="trailing" secondItem="w2F-aL-NJY" secondAttribute="trailing" constant="6" id="Uuy-JD-egz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="main_bg.png" width="640" height="1136"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "35f0a50b-5324-0510-82c6-9ccbd7ae7a83++2312",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "35f0a50b-5324-0510-82c6-9ccbd7ae7a83++2312" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "35f0a50b-5324-0510-82c6-9ccbd7ae7a83++2312" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DCE41508-FD83-42FD-A763-DC433DA561B5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "35f0a50b-5324-0510-82c6-9ccbd7ae7a83++2312" : "HelloEurope\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HelloEurope",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HelloEurope.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/dev.naver.com\/svn\/helloweuropeios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "35f0a50b-5324-0510-82c6-9ccbd7ae7a83++2312"
+    }
+  ]
+}

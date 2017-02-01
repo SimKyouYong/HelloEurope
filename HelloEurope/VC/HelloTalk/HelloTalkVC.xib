@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelloTalkVC">
+            <connections>
+                <outlet property="helloTable" destination="bbv-7g-qlb" id="xcm-0a-ktm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="2U5-7g-GTi"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="talk_advertise.png" translatesAutoresizingMaskIntoConstraints="NO" id="s7Y-q3-E34">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="6Rq-O4-8a2"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bbv-7g-qlb" customClass="UIGridView">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="uiGridViewDelegate" destination="-1" id="gp9-rM-t1g"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="e09-uN-Uft">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="FF7-CW-CLq"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bottom_txt.png" translatesAutoresizingMaskIntoConstraints="NO" id="3pP-VV-Sso">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="GAh-1K-pP0"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2U5-7g-GTi" secondAttribute="trailing" id="10U-fX-egd"/>
+                <constraint firstAttribute="trailing" secondItem="e09-uN-Uft" secondAttribute="trailing" id="1hf-N3-6qs"/>
+                <constraint firstItem="bbv-7g-qlb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="92g-d0-Oix"/>
+                <constraint firstAttribute="bottom" secondItem="e09-uN-Uft" secondAttribute="bottom" id="NQM-Gp-0Jl"/>
+                <constraint firstAttribute="bottom" secondItem="2U5-7g-GTi" secondAttribute="bottom" id="QKS-0h-jQV"/>
+                <constraint firstItem="2U5-7g-GTi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XvR-ke-g3h"/>
+                <constraint firstItem="e09-uN-Uft" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yhl-yj-SV8"/>
+                <constraint firstAttribute="trailing" secondItem="s7Y-q3-E34" secondAttribute="trailing" id="eW7-Vo-G29"/>
+                <constraint firstItem="s7Y-q3-E34" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jN8-co-8v0"/>
+                <constraint firstItem="2U5-7g-GTi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jrm-nd-0xH"/>
+                <constraint firstItem="bbv-7g-qlb" firstAttribute="top" secondItem="s7Y-q3-E34" secondAttribute="bottom" id="lcf-k5-hgW"/>
+                <constraint firstItem="s7Y-q3-E34" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="piD-2X-Qr5"/>
+                <constraint firstItem="3pP-VV-Sso" firstAttribute="top" secondItem="bbv-7g-qlb" secondAttribute="bottom" id="plB-LT-dMW"/>
+                <constraint firstAttribute="trailing" secondItem="bbv-7g-qlb" secondAttribute="trailing" id="s9s-wq-1lf"/>
+                <constraint firstAttribute="trailing" secondItem="3pP-VV-Sso" secondAttribute="trailing" id="tMz-xK-PUC"/>
+                <constraint firstAttribute="bottom" secondItem="3pP-VV-Sso" secondAttribute="bottom" id="uea-QN-cdo"/>
+                <constraint firstItem="bbv-7g-qlb" firstAttribute="top" secondItem="s7Y-q3-E34" secondAttribute="bottom" constant="1" id="w0v-Zx-kYA"/>
+                <constraint firstItem="3pP-VV-Sso" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yOS-n0-7o5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="w0v-Zx-kYA"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="256" y="468"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="main_bg.png" width="640" height="1136"/>
+        <image name="main_bottom_txt.png" width="640" height="76"/>
+        <image name="menu_bg.png" width="458" height="20"/>
+        <image name="talk_advertise.png" width="640" height="108"/>
+    </resources>
+</document>

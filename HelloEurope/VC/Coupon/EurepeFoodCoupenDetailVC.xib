@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EurepeFoodCoupenDetailVC">
+            <connections>
+                <outlet property="europeFoodDetailScrollView" destination="Z9L-DJ-u4v" id="nxF-vA-DOn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Roj-dW-fSt"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="LvN-x1-fxU">
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ElF-7q-amm"/>
+                        <constraint firstAttribute="height" constant="50" id="Ud4-ql-6j4"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="y4F-ee-gcT"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ElF-7q-amm"/>
+                            <exclude reference="y4F-ee-gcT"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6F-LU-D5T">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="9VY-z2-Ebu"/>
+                        <constraint firstAttribute="width" constant="19" id="AoE-4s-omA"/>
+                        <constraint firstAttribute="height" constant="33" id="G26-ha-vlC"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="MPO-Re-7xm"/>
+                        <constraint firstAttribute="height" constant="33" id="Ywd-Mt-Txf"/>
+                        <constraint firstAttribute="width" constant="19" id="ZQu-W7-YZa"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="ctI-nU-9SR"/>
+                        <constraint firstAttribute="height" constant="16" id="rX7-az-ddv"/>
+                    </constraints>
+                    <state key="normal" image="back_btn_on.png"/>
+                    <state key="highlighted" image="back_btn_off.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9VY-z2-Ebu"/>
+                            <exclude reference="AoE-4s-omA"/>
+                            <exclude reference="G26-ha-vlC"/>
+                            <exclude reference="MPO-Re-7xm"/>
+                            <exclude reference="ctI-nU-9SR"/>
+                            <exclude reference="rX7-az-ddv"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="LD2-lL-C0b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQG-q4-0Nh">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8F4-cE-wC6"/>
+                        <constraint firstAttribute="width" constant="40" id="Mho-Gs-H3o"/>
+                    </constraints>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="YAK-EM-LvB"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9L-DJ-u4v">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Tmu-sE-lBU"/>
+                    </connections>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="pWt-K4-Vwy">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="127" id="Qbc-cz-a8z"/>
+                        <constraint firstAttribute="height" constant="22" id="m5p-DR-VfB"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdB-zJ-JqN">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="YmK-Yp-saH"/>
+                        <constraint firstAttribute="height" constant="43" id="dCR-NF-7GX"/>
+                    </constraints>
+                    <state key="normal" image="cart.png"/>
+                    <connections>
+                        <action selector="cartButton:" destination="-1" eventType="touchUpInside" id="7Ss-oF-a1G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsd-2N-euL">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="i0t-Yq-zlI"/>
+                        <constraint firstAttribute="width" constant="43" id="pH8-uz-9ql"/>
+                    </constraints>
+                    <state key="normal" image="pay.png"/>
+                    <connections>
+                        <action selector="moneyButton:" destination="-1" eventType="touchUpInside" id="hku-gB-i05"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LvN-x1-fxU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3qr-TY-3aj"/>
+                <constraint firstItem="pWt-K4-Vwy" firstAttribute="leading" secondItem="x6F-LU-D5T" secondAttribute="trailing" constant="11" id="8a8-Fy-cUC"/>
+                <constraint firstAttribute="trailing" secondItem="LvN-x1-fxU" secondAttribute="trailing" id="FpZ-xx-lp2"/>
+                <constraint firstAttribute="bottom" secondItem="Z9L-DJ-u4v" secondAttribute="bottom" constant="6" id="HPh-xb-dn4"/>
+                <constraint firstAttribute="trailing" secondItem="dsd-2N-euL" secondAttribute="trailing" constant="9" id="JW3-uj-Wni"/>
+                <constraint firstItem="pWt-K4-Vwy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="14" id="O5n-aX-dlS"/>
+                <constraint firstAttribute="trailing" secondItem="Z9L-DJ-u4v" secondAttribute="trailing" constant="6" id="Qku-uX-R5s"/>
+                <constraint firstItem="dsd-2N-euL" firstAttribute="top" secondItem="sdB-zJ-JqN" secondAttribute="bottom" constant="5" id="UQE-tm-Izv"/>
+                <constraint firstItem="Roj-dW-fSt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X4h-kE-zq6"/>
+                <constraint firstAttribute="bottom" secondItem="Roj-dW-fSt" secondAttribute="bottom" id="YPb-a2-cQP"/>
+                <constraint firstItem="LvN-x1-fxU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YQW-i5-Iu4"/>
+                <constraint firstItem="EQG-q4-0Nh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zdg-Hv-p6a"/>
+                <constraint firstAttribute="trailing" secondItem="sdB-zJ-JqN" secondAttribute="trailing" constant="9" id="bcp-nV-15g"/>
+                <constraint firstItem="Roj-dW-fSt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="brB-La-IgL"/>
+                <constraint firstItem="Z9L-DJ-u4v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="bug-9u-6F0"/>
+                <constraint firstItem="x6F-LU-D5T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="e5d-a5-XX2"/>
+                <constraint firstItem="pWt-K4-Vwy" firstAttribute="leading" secondItem="x6F-LU-D5T" secondAttribute="trailing" constant="20" id="fXP-BA-8fb"/>
+                <constraint firstItem="EQG-q4-0Nh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ier-r2-6pY"/>
+                <constraint firstItem="x6F-LU-D5T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="qqR-fl-WdO"/>
+                <constraint firstItem="Z9L-DJ-u4v" firstAttribute="top" secondItem="LvN-x1-fxU" secondAttribute="bottom" constant="6" id="seO-Cd-XKw"/>
+                <constraint firstAttribute="trailing" secondItem="Roj-dW-fSt" secondAttribute="trailing" id="tRB-aR-yFe"/>
+                <constraint firstAttribute="bottom" secondItem="dsd-2N-euL" secondAttribute="bottom" constant="9" id="uyR-WJ-QhQ"/>
+                <constraint firstItem="x6F-LU-D5T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="17" id="wNa-WD-9ec"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wNa-WD-9ec"/>
+                    <exclude reference="fXP-BA-8fb"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_btn_off.png" width="19" height="33"/>
+        <image name="back_btn_on.png" width="19" height="33"/>
+        <image name="cart.png" width="86" height="86"/>
+        <image name="coupon_top.png" width="255" height="43"/>
+        <image name="main_bg.png" width="640" height="1136"/>
+        <image name="menu_bg.png" width="458" height="20"/>
+        <image name="pay.png" width="86" height="86"/>
+    </resources>
+</document>

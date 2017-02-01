@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioGuideVC">
+            <connections>
+                <outlet property="audioMainScrollView" destination="mPq-Un-1R2" id="wSr-W9-zgJ"/>
+                <outlet property="audioMainTableView" destination="v3f-a9-CC9" id="BsY-hG-ugI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="qhr-DX-HRA"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audio_advertise.png" translatesAutoresizingMaskIntoConstraints="NO" id="aSD-6a-gqQ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="ZQq-fZ-7h0"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="pBm-AX-i5i"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="pBm-AX-i5i"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="TQP-6h-SRj">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="oP3-T0-VIE"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bottom_txt.png" translatesAutoresizingMaskIntoConstraints="NO" id="X8a-xh-Fuf">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="auN-gi-ENu"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPq-Un-1R2">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="oyv-PS-Xsx"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="6A5-zn-eP4"/>
+                    </connections>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audio_main_list_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="MtG-hy-hCx">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="dCW-TV-GAM"/>
+                        <constraint firstAttribute="width" constant="105" id="dHz-ZL-byT"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audio_main_list_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="zGx-p6-v0C">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="JNd-82-cmI"/>
+                        <constraint firstAttribute="height" constant="19" id="jTe-OU-qct"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v3f-a9-CC9">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dYD-Nr-YcP"/>
+                        <outlet property="delegate" destination="-1" id="IAW-68-hZN"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TQP-6h-SRj" secondAttribute="trailing" id="535-Js-7iy"/>
+                <constraint firstAttribute="trailing" secondItem="X8a-xh-Fuf" secondAttribute="trailing" id="CR0-px-Nnk"/>
+                <constraint firstAttribute="trailing" secondItem="mPq-Un-1R2" secondAttribute="trailing" id="CYx-0g-iUK"/>
+                <constraint firstAttribute="trailing" secondItem="aSD-6a-gqQ" secondAttribute="trailing" id="Caj-Lp-Wvh"/>
+                <constraint firstItem="mPq-Un-1R2" firstAttribute="top" secondItem="aSD-6a-gqQ" secondAttribute="bottom" constant="6" id="DPG-fM-KXm"/>
+                <constraint firstAttribute="bottom" secondItem="TQP-6h-SRj" secondAttribute="bottom" id="DUZ-eL-J1S"/>
+                <constraint firstItem="X8a-xh-Fuf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HpB-OY-0ce"/>
+                <constraint firstItem="TQP-6h-SRj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nqu-Jl-KZO"/>
+                <constraint firstItem="v3f-a9-CC9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="OTg-3m-dKu"/>
+                <constraint firstItem="qhr-DX-HRA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UCh-rB-O4K"/>
+                <constraint firstItem="zGx-p6-v0C" firstAttribute="top" secondItem="mPq-Un-1R2" secondAttribute="bottom" constant="6" id="VkM-DR-wdT"/>
+                <constraint firstAttribute="trailing" secondItem="v3f-a9-CC9" secondAttribute="trailing" constant="6" id="Yb3-uo-xU0"/>
+                <constraint firstItem="qhr-DX-HRA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cmQ-JA-NrV"/>
+                <constraint firstItem="v3f-a9-CC9" firstAttribute="top" secondItem="mPq-Un-1R2" secondAttribute="bottom" constant="24" id="d9y-fJ-omb"/>
+                <constraint firstItem="aSD-6a-gqQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hGf-qo-Bm8"/>
+                <constraint firstItem="mPq-Un-1R2" firstAttribute="top" secondItem="aSD-6a-gqQ" secondAttribute="bottom" id="jHG-yr-dtN"/>
+                <constraint firstAttribute="bottom" secondItem="qhr-DX-HRA" secondAttribute="bottom" id="lwM-KE-WoU"/>
+                <constraint firstItem="X8a-xh-Fuf" firstAttribute="top" secondItem="v3f-a9-CC9" secondAttribute="bottom" id="oug-A0-cgq"/>
+                <constraint firstItem="MtG-hy-hCx" firstAttribute="top" secondItem="mPq-Un-1R2" secondAttribute="bottom" constant="6" id="p3M-E4-ndh"/>
+                <constraint firstAttribute="trailing" secondItem="qhr-DX-HRA" secondAttribute="trailing" id="p9L-ol-eUl"/>
+                <constraint firstItem="MtG-hy-hCx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="qNX-w2-cjB"/>
+                <constraint firstItem="zGx-p6-v0C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="rkL-cd-LHI"/>
+                <constraint firstAttribute="bottom" secondItem="X8a-xh-Fuf" secondAttribute="bottom" id="tft-cj-0ov"/>
+                <constraint firstItem="aSD-6a-gqQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vtm-Wc-BST"/>
+                <constraint firstItem="mPq-Un-1R2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wi8-n8-9UG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="jHG-yr-dtN"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="audio_advertise.png" width="640" height="105"/>
+        <image name="audio_main_list_01.png" width="209" height="38"/>
+        <image name="audio_main_list_02.png" width="209" height="38"/>
+        <image name="main_bg.png" width="640" height="1136"/>
+        <image name="main_bottom_txt.png" width="640" height="76"/>
+        <image name="menu_bg.png" width="458" height="20"/>
+    </resources>
+</document>

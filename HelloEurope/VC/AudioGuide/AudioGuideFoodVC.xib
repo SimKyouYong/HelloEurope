@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioGuideFoodVC">
+            <connections>
+                <outlet property="foodImageView" destination="Rsd-Ab-d6S" id="T2d-Qe-rRC"/>
+                <outlet property="foodMainImageView" destination="xZJ-2e-rHB" id="CBm-V8-PLV"/>
+                <outlet property="foodScrollView" destination="UXm-po-Ksc" id="9dL-2m-7CX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="sb2-yO-rb7">
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="8ek-gu-EjQ"/>
+                        <constraint firstAttribute="height" constant="50" id="Tkr-Zm-Y4h"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="8ek-gu-EjQ"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vao-t1-IKj">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="FAe-2p-YXp"/>
+                        <constraint firstAttribute="width" constant="19" id="MrQ-Yv-zRr"/>
+                        <constraint firstAttribute="width" constant="19" id="T4l-Bb-se9"/>
+                        <constraint firstAttribute="height" constant="16" id="VGD-5K-a1g"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="Xfo-xW-n9q"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="jYX-vs-XcM"/>
+                        <constraint firstAttribute="width" constant="10" id="q07-Fm-DuC"/>
+                        <constraint firstAttribute="height" constant="33" id="x4R-bB-Mcg"/>
+                    </constraints>
+                    <state key="normal" image="back_btn_on.png"/>
+                    <state key="highlighted" image="back_btn_off.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="FAe-2p-YXp"/>
+                            <exclude reference="MrQ-Yv-zRr"/>
+                            <exclude reference="VGD-5K-a1g"/>
+                            <exclude reference="Xfo-xW-n9q"/>
+                            <exclude reference="jYX-vs-XcM"/>
+                            <exclude reference="q07-Fm-DuC"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="1TH-EJ-bYS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zb-FL-gVn">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hMM-Xq-doQ"/>
+                        <constraint firstAttribute="width" constant="40" id="vUh-Se-6A9"/>
+                    </constraints>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="KMP-JD-XEz"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xZJ-2e-rHB">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="n4x-ex-InC"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-Ab-d6S">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="RGh-75-Dnw"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXm-po-Ksc">
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="zPS-gZ-1QJ"/>
+                    </connections>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main02_01_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="rKa-he-26U">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="lzN-Ou-C6r"/>
+                        <constraint firstAttribute="height" constant="22" id="uQX-p1-9G1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rKa-he-26U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="14" id="1hl-Pt-Zmm"/>
+                <constraint firstItem="vao-t1-IKj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="2ea-MG-gh9"/>
+                <constraint firstAttribute="trailing" secondItem="sb2-yO-rb7" secondAttribute="trailing" id="5g6-2X-JZz"/>
+                <constraint firstAttribute="bottom" secondItem="UXm-po-Ksc" secondAttribute="bottom" constant="6" id="C1d-s0-hhK"/>
+                <constraint firstItem="sb2-yO-rb7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Etu-AM-XIJ"/>
+                <constraint firstItem="Rsd-Ab-d6S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="Fi3-6J-HhU"/>
+                <constraint firstItem="xZJ-2e-rHB" firstAttribute="top" secondItem="sb2-yO-rb7" secondAttribute="bottom" constant="6" id="IAH-Gb-z2I"/>
+                <constraint firstAttribute="trailing" secondItem="xZJ-2e-rHB" secondAttribute="trailing" constant="6" id="ISu-Eh-pZ4"/>
+                <constraint firstItem="sb2-yO-rb7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JAV-mQ-xTt"/>
+                <constraint firstItem="7zb-FL-gVn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NJT-AX-6Cu"/>
+                <constraint firstItem="xZJ-2e-rHB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="Pjf-XA-PWx"/>
+                <constraint firstItem="Rsd-Ab-d6S" firstAttribute="top" secondItem="xZJ-2e-rHB" secondAttribute="bottom" constant="6" id="QSP-WC-fh3"/>
+                <constraint firstItem="UXm-po-Ksc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="Qz5-R8-aw5"/>
+                <constraint firstItem="rKa-he-26U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UMs-Z8-Pcn"/>
+                <constraint firstItem="vao-t1-IKj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Vh4-vh-CNq"/>
+                <constraint firstItem="7zb-FL-gVn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="axo-TW-QNn"/>
+                <constraint firstItem="UXm-po-Ksc" firstAttribute="top" secondItem="Rsd-Ab-d6S" secondAttribute="bottom" constant="6" id="cLz-Eu-Hzi"/>
+                <constraint firstAttribute="trailing" secondItem="rKa-he-26U" secondAttribute="trailing" constant="264" id="cl3-Cs-1cW"/>
+                <constraint firstItem="vao-t1-IKj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="17" id="crw-Qh-CEn"/>
+                <constraint firstItem="rKa-he-26U" firstAttribute="leading" secondItem="vao-t1-IKj" secondAttribute="trailing" constant="245" id="mat-Af-BKi"/>
+                <constraint firstAttribute="trailing" secondItem="Rsd-Ab-d6S" secondAttribute="trailing" constant="6" id="v20-5w-yaN"/>
+                <constraint firstAttribute="trailing" secondItem="UXm-po-Ksc" secondAttribute="trailing" constant="6" id="xgA-8A-anx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="crw-Qh-CEn"/>
+                    <exclude reference="cl3-Cs-1cW"/>
+                    <exclude reference="mat-Af-BKi"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_btn_off.png" width="19" height="33"/>
+        <image name="back_btn_on.png" width="19" height="33"/>
+        <image name="main02_01_logo.png" width="141" height="44"/>
+        <image name="menu_bg.png" width="458" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EuropeFoodCouponVC">
+            <connections>
+                <outlet property="buttonView" destination="csP-Gv-XOw" id="2HJ-hq-430"/>
+                <outlet property="europeFoodTableView" destination="Nin-5E-S1W" id="BTr-p5-xSx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="RWp-qI-Vo7"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon_advertise.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Dg-gl-UiQ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="RdC-Vb-O2r"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="qxY-ID-nRT">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="dEs-ur-WYL"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bottom_txt.png" translatesAutoresizingMaskIntoConstraints="NO" id="1dL-f1-KJ8">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="8JK-yO-Tip"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csP-Gv-XOw">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="jRi-Xw-NN7"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nin-5E-S1W">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="oN6-PC-MjC"/>
+                        <outlet property="delegate" destination="-1" id="ewH-mm-CrY"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1dL-f1-KJ8" secondAttribute="bottom" id="2LR-ZF-GDB"/>
+                <constraint firstItem="Nin-5E-S1W" firstAttribute="top" secondItem="csP-Gv-XOw" secondAttribute="bottom" constant="6" id="2au-te-tqS"/>
+                <constraint firstAttribute="trailing" secondItem="6Dg-gl-UiQ" secondAttribute="trailing" id="8pK-aW-Tf9"/>
+                <constraint firstItem="1dL-f1-KJ8" firstAttribute="top" secondItem="Nin-5E-S1W" secondAttribute="bottom" id="9JH-Ua-AOL"/>
+                <constraint firstItem="qxY-ID-nRT" firstAttribute="top" secondItem="RWp-qI-Vo7" secondAttribute="bottom" constant="25" id="Cj6-ne-sFK"/>
+                <constraint firstAttribute="trailing" secondItem="Nin-5E-S1W" secondAttribute="trailing" id="Etn-GJ-VjK"/>
+                <constraint firstItem="csP-Gv-XOw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H2v-kK-ej3"/>
+                <constraint firstItem="RWp-qI-Vo7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mfp-vk-kOf"/>
+                <constraint firstItem="qxY-ID-nRT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N17-xV-yxO"/>
+                <constraint firstItem="1dL-f1-KJ8" firstAttribute="top" secondItem="qxY-ID-nRT" secondAttribute="bottom" constant="25" id="N4f-oG-3x2"/>
+                <constraint firstItem="Nin-5E-S1W" firstAttribute="top" secondItem="csP-Gv-XOw" secondAttribute="bottom" constant="6" id="PLL-ge-zpH"/>
+                <constraint firstAttribute="trailing" secondItem="1dL-f1-KJ8" secondAttribute="trailing" id="Qre-xm-Vrt"/>
+                <constraint firstItem="1dL-f1-KJ8" firstAttribute="top" secondItem="Nin-5E-S1W" secondAttribute="bottom" id="Rxh-9E-05B"/>
+                <constraint firstItem="csP-Gv-XOw" firstAttribute="top" secondItem="6Dg-gl-UiQ" secondAttribute="bottom" constant="6" id="UcY-uj-PxL"/>
+                <constraint firstItem="1dL-f1-KJ8" firstAttribute="top" secondItem="Nin-5E-S1W" secondAttribute="bottom" id="VeX-5l-LjY"/>
+                <constraint firstItem="csP-Gv-XOw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wfc-hp-8DS"/>
+                <constraint firstItem="Nin-5E-S1W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="asj-QA-ZMZ"/>
+                <constraint firstItem="Nin-5E-S1W" firstAttribute="top" secondItem="csP-Gv-XOw" secondAttribute="bottom" constant="6" id="bOc-TX-5mv"/>
+                <constraint firstItem="6Dg-gl-UiQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ckD-uV-Rzh"/>
+                <constraint firstAttribute="bottom" secondItem="RWp-qI-Vo7" secondAttribute="bottom" id="dar-Ex-fe3"/>
+                <constraint firstItem="Nin-5E-S1W" firstAttribute="top" secondItem="csP-Gv-XOw" secondAttribute="bottom" constant="6" id="dxA-FZ-Ql8"/>
+                <constraint firstAttribute="trailing" secondItem="RWp-qI-Vo7" secondAttribute="trailing" id="h4s-eM-2PG"/>
+                <constraint firstAttribute="trailing" secondItem="qxY-ID-nRT" secondAttribute="trailing" id="kqX-GY-gQd"/>
+                <constraint firstItem="RWp-qI-Vo7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nu5-79-Atm"/>
+                <constraint firstAttribute="bottom" secondItem="qxY-ID-nRT" secondAttribute="bottom" id="oIV-xq-GXl"/>
+                <constraint firstItem="csP-Gv-XOw" firstAttribute="top" secondItem="6Dg-gl-UiQ" secondAttribute="bottom" constant="6" id="rN3-J6-WQR"/>
+                <constraint firstItem="1dL-f1-KJ8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sVT-bE-XPb"/>
+                <constraint firstAttribute="trailing" secondItem="csP-Gv-XOw" secondAttribute="trailing" id="tkL-cJ-7Lu"/>
+                <constraint firstItem="Nin-5E-S1W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uLh-bk-3Uf"/>
+                <constraint firstAttribute="trailing" secondItem="csP-Gv-XOw" secondAttribute="trailing" id="xwa-qA-Rzw"/>
+                <constraint firstAttribute="trailing" secondItem="Nin-5E-S1W" secondAttribute="trailing" id="y9I-Rj-z3K"/>
+                <constraint firstItem="6Dg-gl-UiQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ygW-Bv-n4s"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="H2v-kK-ej3"/>
+                    <exclude reference="UcY-uj-PxL"/>
+                    <exclude reference="xwa-qA-Rzw"/>
+                    <exclude reference="Etn-GJ-VjK"/>
+                    <exclude reference="PLL-ge-zpH"/>
+                    <exclude reference="asj-QA-ZMZ"/>
+                    <exclude reference="bOc-TX-5mv"/>
+                    <exclude reference="9JH-Ua-AOL"/>
+                    <exclude reference="N4f-oG-3x2"/>
+                    <exclude reference="Rxh-9E-05B"/>
+                    <exclude reference="Cj6-ne-sFK"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="coupon_advertise.png" width="640" height="105"/>
+        <image name="main_bg.png" width="640" height="1136"/>
+        <image name="main_bottom_txt.png" width="640" height="76"/>
+        <image name="menu_bg.png" width="458" height="20"/>
+    </resources>
+</document>
