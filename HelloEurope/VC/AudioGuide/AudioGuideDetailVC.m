@@ -348,7 +348,16 @@
         if(buttonIndex == 1){
             NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
             [defaults synchronize];
-            
+            //포인트 있는지 확인
+            NSLog(@"포인트 : %@" , pointStr);
+            NSLog(@"my 포인트 : %@" , [defaults stringForKey:KEY_LEVEL]);
+            NSString *val  = [defaults stringForKey:KEY_LEVEL];
+            if ([pointStr intValue] > [val intValue]) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"알림" message:@"포인트가 부족합니다."
+                                                               delegate:self cancelButtonTitle:nil otherButtonTitles:@"확인" ,nil];
+                [alert show];
+                return;
+            }
             NSString *urlString = [NSString stringWithFormat:@"%@%@", COMMON_URL, AUDIO_POINT_URL];
             NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
             NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: nil delegateQueue: [NSOperationQueue mainQueue]];
